@@ -29,7 +29,7 @@ type UserModel struct {
 	Stat          string
 	Failcount     int
 }
-
+/*
 //Repository interface has all the methods....
 type Repository interface {
 	CreateConnection() error
@@ -43,7 +43,7 @@ type Repository interface {
 	First(user *UserModel, id int) *UserModel
 	CloseDB()
 }
-
+*/
 //Database Model...
 type Database struct {
 	DB *gorm.DB
