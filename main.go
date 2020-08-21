@@ -20,8 +20,9 @@ func main() {
 	handler.Connectdb()
 	
 	router := gin.Default()
+	defer handler.Closedb()
 	m := make(map[int]handler.info)
-	
+	 
 	
 	router.POST("/urls/", handler.Post(m))
 	router.GET("/urls/:id", handler.Getbyid())
