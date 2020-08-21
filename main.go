@@ -12,15 +12,6 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-//UserModel for database
-
-type info struct {
-	done chan (bool)
-	data chan (bool)
-	//Crawltimeout  int
-	Freq int
-	
-}
 
 //var db *gorm.DB
 
@@ -29,7 +20,7 @@ func main() {
 	handler.Connectdb()
 	
 	router := gin.Default()
-	m := make(map[int]signal)
+	m := make(map[int]handler.info)
 	
 	
 	router.POST("/urls/", handler.Post(m))
