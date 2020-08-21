@@ -31,5 +31,4 @@ func main() {
 	router.DELETE("/urls/:id", handler.Deletebyid(m))
 
 	router.Run()
-	db.Close()
 }
