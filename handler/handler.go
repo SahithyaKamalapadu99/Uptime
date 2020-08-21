@@ -215,3 +215,6 @@ func Connectdb() {
 	err := r.CreateConnection()
 	_ = err
 }
+func Closedb(){
+	r.CloseDB()
+}
