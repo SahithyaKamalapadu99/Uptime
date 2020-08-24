@@ -15,10 +15,17 @@ About the application :
 2.Application creates a database and allows you to store urls and parameters 
 3.It allows you to perform various requests  like GET,POST,PATCH,DELETE,ACTIVATE and DEACTIVATE
 4. Following requests can be performed 
+
+
 POST /urls/                             allows to add new url record into database along with the parameters
+
 GET /urls/:id                           retrieves the url details and status of url with "id " if present in database  
+
 DELETE /urls/:id                        deletes the url with id as "id" record from database                  
+
 PATCH /urls/:id                         allows to update the details of respective "id" if url present in the database 
+
 POST /urls/:id/activate                 activates the url with requested id ,if it is inactive 
+
 POST /urls/:id/deactivate               Deactivates the url with requested id and stops crawling the site.
 
